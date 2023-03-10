@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="cities.js"></script>
+    <title>Document</title>
+
+  <link rel="stylesheet" href="style2.css">
+  <title>Armaan</title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+               <form name="myForm"  onsubmit="return validateForm()" action="questionanswers.html" method="post">
+			   <div class="row g-3 align-items-center">
+                    <h2>Student Information Form</h2>
+                    <div class="inputbox">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="username" required>
+                        <label for="">Student Name</label>
+						
+                    </div>
+                    <div class="inputbox">
+                      <ion-icon name="accessibility-outline"></ion-icon>
+                        <input type="text" required>
+                        <label for="">Father Name</label>
+                    </div>
+					 <div class="inputbox">
+                       <ion-icon name="home-outline"></ion-icon>
+                        <input type="username" required>
+                        <label for="">Address</label>
+                    </div>
+                    <div class="inputbox">
+                      <ion-icon name="navigate-outline"></ion-icon>
+                        
+                        <label for="">State and City</label>
+						<br><br>
+						<select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control"  required></select>
+<select id ="state" class="form-control" required></select>
+<script language="javascript">print_state("sts");</script>
+ 
+  
+                    </div>
+              <div class="inputbox">
+                    <ion-icon name="call-outline"></ion-icon>
+                        <input type="text" required>
+                        <label for="">Mobile No.</label>
+                    </div>
+					<form action="/action_page.php">
+  <label for="Dateofbirth" style="color:white;">Date Of Birth:</label>
+  <input type="date" id="Dateofbirth" name="Dateofbirth">
+  
+  
+</form>
+<br><br>
+                   
+                    <input  type="submit" style="background-color:white; text-align:center;" id="submit" value="submit" width="15px" ></a>
+                    
+                </form>
+            </div>
+        </div>
+    </section>	
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
